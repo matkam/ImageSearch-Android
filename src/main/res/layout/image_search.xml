@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:id="@+id/editText" android:layout_margin="5dp" android:hint="@string/search_hint"
+            />
+    <include android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             layout="@android:layout/list_content"/>
+</LinearLayout>
