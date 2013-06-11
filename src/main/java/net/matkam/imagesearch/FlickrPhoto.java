@@ -71,8 +71,9 @@ public class FlickrPhoto {
         localImageLocation = file.getAbsolutePath();
     }
 
+    // Generates URL for a medium (240 px) sized image
     private String generateDownloadUrl() {
-        return "http://farm"+farm+".staticflickr.com/"+server+"/"+id+"_"+secret+".jpg";
+        return "http://farm"+farm+".staticflickr.com/"+server+"/"+id+"_"+secret+"_m.jpg";
     }
 
     public Bitmap getLocalImage() {
